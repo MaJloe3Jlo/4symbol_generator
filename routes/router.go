@@ -29,7 +29,7 @@ var routs = Routes{
 	Route{
 		"KeyOff",
 		"POST",
-		"/key/{keyID}",
+		"/key",
 		handler.KeyOff,
 	},
 	Route{

@@ -17,7 +17,7 @@ Server starts on :7100 port and if keys do not exist in Redis - waiting for inpu
     * path '/key/{id}' - provides key's information by ID (use method path '/key' to get ID).
     * path '/statistics' - provides information about keys. How many: 'issued', 'not issued' or 'off'.
 2) POST method:
-    * path '/key/{id}' - change key's status to 'off', only if it has status 'issued'.
+    * path '/key' - receive Content-Type:application/json body (example: {"id":1}) to change key's status to 'off', only if it has status 'issued'.
     
 ## `RU`**Генератор ключей v.0.0.1 от m3**
 
@@ -37,4 +37,4 @@ Server starts on :7100 port and if keys do not exist in Redis - waiting for inpu
     * "/key/{id}" - инфомация о ключе по его ID (полученного в методе "key").
     * "/statistics" - общая информация о ключах. Сколько из них имеют статусы: "не выдан", "выдан" и "погашен".
 2) POST методы:
-    * "/key/{id}" - перевод ключа в статус "погашен, только если ключ был в статусе "выдан".            
+    * "/key" - принимает Content-Type:application/json в теле запроса (пример: {"id":1}) и переводит ключ в статус "погашен, только если ключ был в статусе "выдан".            
