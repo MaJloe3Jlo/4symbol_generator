@@ -2,12 +2,11 @@ package main
 
 import (
 	"fmt"
+	"github.com/MaJloe3Jlo/perx_test_done/data"
+	"github.com/MaJloe3Jlo/perx_test_done/routes"
+	"github.com/MaJloe3Jlo/perx_test_done/util"
 	"log"
 	"net/http"
-
-	"github.com/MaJloe3Jlo/4symbol_generator/data"
-	"github.com/MaJloe3Jlo/4symbol_generator/routes"
-	"github.com/MaJloe3Jlo/4symbol_generator/util"
 )
 
 // Before we go need to create an keys. Or to find it in Redis.
